@@ -1,7 +1,9 @@
 # R_theme
 Summary of common themes in ggplot2
 
-<code>
+# theme_1
+
+
 library(ggplot2)
 library(ggsci)
 
@@ -20,9 +22,8 @@ theme_1 <-
     legend.background = element_rect(colour = "NA"),
     legend.key.size = unit(0.75, "lines"),
     strip.background = element_rect(fill = "transparent"),
-    strip.text = element_text(size=6.5,face="bold")
-    
-  )
+    strip.text = element_text(size=6.5,face="bold") 
+    )
 
 df <- subset(df,(clarity == c("SI2","SI1","VS1","VS2")))
 p <-  ggplot(df,aes(color,depth,fill=cut))+
@@ -31,7 +32,3 @@ p <-  ggplot(df,aes(color,depth,fill=cut))+
       theme_1+
       scale_fill_nejm()
 p
-<code>
-
-  
-  
