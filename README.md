@@ -31,7 +31,7 @@ p <-  ggplot(df,aes(color,depth,fill=cut))+
       theme_1+
       scale_fill_nejm()
 p
-</code>
+<code>
 
   
   
