@@ -1,10 +1,9 @@
 # R_theme
 Summary of common themes in ggplot2
 
+<code>
 library(ggplot2)
 library(ggsci)
-
-
 
 df <- diamonds
 df_color <- unique(df$color)
@@ -32,7 +31,7 @@ p <-  ggplot(df,aes(color,depth,fill=cut))+
       theme_1+
       scale_fill_nejm()
 p
-
+</code>
 
   
   
